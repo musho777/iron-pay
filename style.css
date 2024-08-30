@@ -133,7 +133,7 @@ p {
   flex-direction: row;
   gap: 120px;
   align-items: center;
-  z-index: 9999;
+  z-index: 99;
   position: absolute;
   top: 5px;
   box-sizing: border-box;
@@ -207,7 +207,7 @@ p {
   flex-direction: column;
   gap: 40px;
   padding: 0 70px;
-  z-index: 999;
+  z-index: 99;
 }
 
 .blockButton {
@@ -270,7 +270,7 @@ p {
   padding: 30px 70px;
   border-radius: 42px;
   position: relative;
-  z-index: 999;
+  z-index: 996;
 }
 
 .block3>p {
@@ -956,6 +956,371 @@ p {
   display: none;
 }
 
+
+
+
+
+
+
+
+
+.popUp {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.70);
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupItem {
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+  background: white;
+  height: 550px;
+  border-radius: 13px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  position: relative;
+}
+
+.priceInfo {
+  margin-bottom: 35px;
+
+}
+
+.priceInfo>input {
+  width: 100px;
+  border: 0.65px solid #C1C1C1;
+  border-radius: 20px;
+  height: 25px;
+  padding: 0 10px;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.popupItemClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 99999;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.buy1 {
+  width: 40%;
+  background-image: url('./image/Frame.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  border-radius: 13px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buy1Title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25.54px;
+}
+
+.buy1Text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 12.77px;
+}
+
+.buy2 {
+  width: 60%;
+  background-color: #F9F9F9;
+  height: 100%;
+  border-radius: 13px;
+  padding: 10px;
+}
+
+.buy2Hedaer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.buy2Hedaer>p {
+  color: #45108A;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  line-height: 12px;
+  font-size: 10px;
+  margin-top: -4px;
+}
+
+
+
+.buy2Block {
+  padding-top: 30px;
+}
+
+.buy2BlockInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buy2BlockInfoTitle {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 19px;
+}
+
+.buy2BlockInfoText {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 12px;
+  font-size: 10px;
+}
+
+.buy2Price {
+  background: white;
+  margin: 20px 0;
+  border-radius: 4px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy2PriceInfo {
+  width: 50%;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 12.77px;
+  color: #000;
+}
+
+.buy2Usdt {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.buy2PriceU {
+  width: 27%;
+}
+
+.buy2Cancle {
+  border: none;
+  background: white;
+  width: 200px;
+  height: 35px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 12px;
+  font-size: 10px;
+  border-radius: 7px;
+}
+
+.buy2Next {
+  color: white !important;
+  background-color: #000 !important;
+}
+
+.buy2Rub {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 15px;
+  font-size: 13px;
+}
+
+.buy2button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lineDiv {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bacnkIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.lineDiv>p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.selecDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selecDiv>label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 11px;
+  color: #000;
+}
+
+#select {
+  width: 100px;
+  height: 30px;
+  border: 0.65px solid #C1C1C1;
+  border-radius: 20px;
+  padding-left: 10px;
+  color: #9C9C9C;
+  font-size: 9px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 30px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23C1C1C1" height="10" width="10" viewBox="0 0 330 330"><path d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/></svg>') no-repeat right center;
+  background-size: 10px;
+  background-position: 90%;
+}
+
+.line {
+  width: 43%;
+  height: 0.65px;
+  background-color: #A8A8A8;
+}
+
+.buy2Select {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.buy2Select>p {
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #2C2C2C;
+  margin-bottom: 4px;
+  width: 40%;
+}
+
+.buy2Select>div {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .popupItem {
+    flex-direction: column;
+  }
+
+  .buy2Cancle {
+    width: 40%;
+  }
+
+  .buy2Usdt {
+    font-size: 15px;
+  }
+
+  .popupItem {
+    gap: 50px;
+  }
+
+  .buy2Select {
+    gap: 10px;
+  }
+
+  .buy1 {
+    width: 100%;
+    order: 2;
+  }
+
+  .buy2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .buy2Select>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .buy2Select>p {
+    width: 100%;
+  }
+
+  .selecDiv {
+    width: 40%;
+  }
+
+  #select {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1400px) {
   body {
     margin: auto !important;
@@ -1394,9 +1759,6 @@ p {
     width: 70px;
   }
 
-  .companiLogo>img {
-    /* object-fit: cover; */
-  }
 
   .block {
     border-radius: 15px;
